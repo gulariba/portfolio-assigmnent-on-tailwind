@@ -1,0 +1,48 @@
+/* General section styling */
+.skills-section {
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .skills-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Skills container styling */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Individual skill items */
+  .skill-item {
+    padding: 0.8rem 1.5rem;
+    background: #fd077a;;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for skill items */
+  .skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,139 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #fd077a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right-div{
+    width: 50%;
+}
+.header-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-links li{
+    list-style-type: none;
+}
+.nav-links{
+    text-decoration: none;
+    color: black;
+}
+.nav-links:hover{
+    text-decoration: solid;
+    color: white;
+}
+.logo{
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-right-div {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  
+    .header-links {
+      flex-direction: column;
+    }
+  
+    .header-links li {
+      margin: 0.5rem 0;
+    }
+    /* Tablet and iPad (Portrait) - between 769px and 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header {
+      padding: 0 15px;
+  }
+
+  .header-right-div {
+      width: 60%;
+  }
+
+  .logo {
+      font-size: 26px;
+  }
+
+  .header-links li {
+      margin: 0 10px;
+  }
+}
+
+/* Tablet (Landscape) - between 600px and 768px */
+@media (max-width: 768px) and (min-width: 600px) {
+  .header {
+      flex-direction: row;
+      padding: 0 10px;
+  }
+
+  .header-right-div {
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .logo {
+      font-size: 24px;
+  }
+  
+  .header-links {
+      flex-wrap: wrap;
+  }
+
+  .header-links li {
+      margin: 0 8px;
+  }
+}
+
+/* Mobile Devices (Portrait) - up to 599px */
+@media (max-width: 599px) {
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .header-right-div {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+  }
+
+  .header-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header-links li {
+      margin: 0.5rem 0;
+  }
+
+  .logo {
+      font-size: 22px;
+  }
+}
+}
+
+/* Small Mobile Devices (Extra Small) - up to 400px */
+@media (max-width: 400px) {
+  .logo {
+      font-size: 18px;
+  }
+
+  .header-links li {
+      margin: 0.3rem 0;
+  }
+  
+  .header {
+      padding: 5px;
+  }
+}
